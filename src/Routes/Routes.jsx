@@ -3,8 +3,8 @@ import { createBrowserRouter } from 'react-router'
 import Root from '../Pages/Root/Root';
 import ErrorPage from '../Pages/ErrorPage/ErrorPage';
 import Home from '../Pages/Home/Home';
-import ListedBooks from '../Pages/ListedBooks/ListedBooks';
-import PagesToRead from '../Pages/PagesToRead/PagesToRead';
+import InstalledApps from '../Pages/InstalledApps/InstalledApps';
+import AllApps from '../Pages/AllApps/AllApps';
 import AppDetails from '../Pages/AppDetails/AppDetails';
 
 export const router = createBrowserRouter([
@@ -16,7 +16,7 @@ export const router = createBrowserRouter([
       {
         index: true,
         loader: async () => {
-          const res = await fetch("/trendingAppsData.json");
+          const res = await fetch("/allAppsData.json");
           return res.json();
         },
         path: "/",
@@ -24,16 +24,20 @@ export const router = createBrowserRouter([
       },
       {
         path: "/all-apps",
-        Component: ListedBooks
+        loader: async () => {
+          const res = await fetch("/allAppsData.json");
+          return res.json();
+        },
+        Component: AllApps
       },
       {
         path: "/installed-apps",
-        Component: PagesToRead
+        Component: InstalledApps
       },
       {
         path: "/appDetails/:id",
         loader: async () => {
-          const res = await fetch("/trendingAppsData.json");
+          const res = await fetch("/allAppsData.json");
           return res.json();
         },
         Component: AppDetails

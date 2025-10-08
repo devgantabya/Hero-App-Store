@@ -4,7 +4,7 @@ import { addToStoredDB } from '../../utilities/storeDataInLocal';
 import iconDownloads from "../../assets/icon-downloads.png"
 import iconRatings from "../../assets/icon-ratings.png"
 import iconReviews from "../../assets/icon-review.png"
-
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 
 const AppDetails = () => {
     const { id } = useParams();
@@ -56,9 +56,24 @@ const AppDetails = () => {
             </div>
             <div className='py-10 border-0 border-b-1 border-[#dddddd] px-4 md:px-0'>
                 <h4 className='text-[#001931] font-semibold text-2xl text-center md:text-left pb-5'>Ratings</h4>
-                {
-                    ratings.map((rating) => <button className='text-green-400 px-2 py-1 mx-5 bg-green-100 rounded'>#{rating.name}</button>)
-                }
+                <ResponsiveContainer width="100%" height={300} style={{ outline: "none" }}>
+                    <BarChart
+                        layout="vertical"
+                        data={ratings
+                            .slice()
+                            .sort((a, b) => b.name - a.name)
+                            .map(rating => ({
+                                name: rating.name,
+                                value: rating.count || rating.value || 0,
+                            }))}
+                    >
+                        <CartesianGrid horizontal={false} stroke="none" />
+                        <XAxis type="number" axisLine={false} tickLine={false} />
+                        <YAxis type="category" dataKey="name" reversed axisLine={false} tickLine={false} tick={{ dx: -10 }} />
+                        <Tooltip />
+                        <Bar dataKey="value" fill="#ff8811" barSize={30} />
+                    </BarChart>
+                </ResponsiveContainer>
             </div>
             <div className='py-10 border-0 border-b-1 border-[#dddddd] px-4 md:px-0'>
                 <h4 className='text-[#001931] font-semibold text-2xl text-center md:text-left pb-5'>Description</h4>

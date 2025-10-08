@@ -4,7 +4,7 @@ const Statistics = () => {
     return (
         <div className='text-white bg-gradient-to-br from-[#632EE3] to-[#9F62F2] p-4 md:p-20 text-center space-y-10 md:space-y-15'>
             <h1 className='font-bold text-[34px] md:text-5xl pt-4 md:pt-0 leading-12'>Trusted by Millions, Built for You</h1>
-            <div className='flex flex-col md:flex-row justify-center items-center gap-8 space-y-4'>
+            <div className='flex flex-col md:flex-row justify-center gap-5 items-center space-y-4'>
                 <div className='space-y-3 md:space-y-4 border rounded-2xl md:rounded-0 p-10 md:p-0 bg-gray-900 md:bg-transparent md:border-0 w-full'>
                     <p className='text-base'>Total Downloads</p>
                     <h2 className='text-5xl md:text-[64px] font-extrabold'>29.6M</h2>

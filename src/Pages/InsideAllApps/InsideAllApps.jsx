@@ -1,15 +1,11 @@
-import { Link } from "react-router";
+import React from 'react';
+import { Link } from 'react-router';
 import { FiDownload } from "react-icons/fi";
 import { FaStar } from "react-icons/fa";
 
+const InsideAllApps = ({ insideApps }) => {
 
-const TrendingApp = ({ singleApp }) => {
-
-    const { image, downloads, ratingAvg, id, title } = singleApp;
-
-
-
-
+    const { id, title, image, downloads, ratingAvg } = insideApps;
 
     return (
         <div>
@@ -36,8 +32,8 @@ const TrendingApp = ({ singleApp }) => {
                     </div>
                 </div>
             </Link>
-        </div>
+        </div >
     );
 };
 
-export default TrendingApp;
+export default InsideAllApps;

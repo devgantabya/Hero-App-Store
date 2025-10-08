@@ -12,8 +12,8 @@ const NotFoundAppPage = () => {
             <div className='p-20 flex justify-center items-center bg-[#f5f5f5]'>
                 <div className='text-center'>
                     <img src={errorAppImg} alt="404 - Page Not Found" />
-                    <h1 className='text-[#001931] font-semibold text-5xl mt-10'>Oops, page not found!</h1>
-                    <p className='text-[#627382] text-xl py-4'>The page you are looking for is not available.</p>
+                    <h1 className='text-[#001931] font-semibold text-5xl mt-10 uppercase'>OPPS!! App not found</h1>
+                    <p className='text-[#627382] text-xl py-4'>The App you are requesting is not found on our system.  please try another apps</p>
                     <Link to="/all-apps" className='bg-gradient-to-br from-[#632EE3] to-[#9F62F2] py-1 px-4 text-white rounded text-base font-semibold'><button>Go Back!</button></Link>
                 </div>
             </div>
