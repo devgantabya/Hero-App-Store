@@ -1,0 +1,344 @@
+[
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/616/616408.png",
+    "title": "Forest: Focus for Productivity",
+    "companyName": "SeekrTech",
+    "id": 1,
+    "description": "Stay focused and grow a virtual forest by completing your tasks. A fun way to beat phone addiction and boost productivity.",
+    "size": 54,
+    "reviews": 4520,
+    "ratingAvg": 4.7,
+    "downloads": 320000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 410 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 2710 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/847/847969.png",
+    "title": "SmPlan: ToDo List with Reminder",
+    "companyName": "SmSoft Solutions",
+    "id": 2,
+    "description": "Organize your daily tasks, set reminders, and never miss deadlines with a clean and intuitive to-do app.",
+    "size": 48,
+    "reviews": 2180,
+    "ratingAvg": 4.5,
+    "downloads": 150000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 310 },
+      { "name": "4 star", "count": 620 },
+      { "name": "5 star", "count": 1100 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/3062/3062634.png",
+    "title": "FLIP - Focus Timer for Study",
+    "companyName": "FLIP Tech",
+    "id": 3,
+    "description": "Enhance your study sessions using the FLIP timer. Focused intervals help you study efficiently and avoid distractions.",
+    "size": 42,
+    "reviews": 1780,
+    "ratingAvg": 4.6,
+    "downloads": 112000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 210 },
+      { "name": "4 star", "count": 520 },
+      { "name": "5 star", "count": 940 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2922/2922510.png",
+    "title": "Pomocat - Cute Pomodoro Timer",
+    "companyName": "CatFocus Inc",
+    "id": 4,
+    "description": "Use Pomodoro technique with adorable cat animations. Stay productive and enjoy your focus sessions.",
+    "size": 36,
+    "reviews": 1340,
+    "ratingAvg": 4.8,
+    "downloads": 88000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 310 },
+      { "name": "5 star", "count": 860 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2920/2920222.png",
+    "title": "Time Planner: Schedule & Tasks",
+    "companyName": "PlanIt Ltd",
+    "id": 5,
+    "description": "Plan your day efficiently, schedule tasks, and track your productivity with ease using this all-in-one planner.",
+    "size": 50,
+    "reviews": 1960,
+    "ratingAvg": 4.4,
+    "downloads": 123000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 720 },
+      { "name": "5 star", "count": 710 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921825.png",
+    "title": "Morning Habits - Daily Routine",
+    "companyName": "HabitFlow",
+    "id": 6,
+    "description": "Build healthy morning routines and track your daily habits for a productive and positive start to your day.",
+    "size": 40,
+    "reviews": 1120,
+    "ratingAvg": 4.6,
+    "downloads": 87000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 310 },
+      { "name": "5 star", "count": 590 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921827.png",
+    "title": "Focus Plant: Pomodoro Forest",
+    "companyName": "GreenFocus Apps",
+    "id": 7,
+    "description": "Grow a virtual forest while staying focused using Pomodoro timers. Fun, interactive, and effective for concentration.",
+    "size": 46,
+    "reviews": 1450,
+    "ratingAvg": 4.7,
+    "downloads": 102000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 35 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 810 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2922/2922512.png",
+    "title": "Alarmy - Alarm Clock & Sleep",
+    "companyName": "Alarmy Inc",
+    "id": 8,
+    "description": "Wake up on time with smart alarms, sleep tracking, and fun challenges to get out of bed effectively.",
+    "size": 55,
+    "reviews": 3250,
+    "ratingAvg": 4.5,
+    "downloads": 240000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 110 },
+      { "name": "3 star", "count": 480 },
+      { "name": "4 star", "count": 820 },
+      { "name": "5 star", "count": 1750 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921222.png",
+    "title": "Focus Booster",
+    "companyName": "Focus Booster Inc.",
+    "id": 9,
+    "description": "Focus Booster is a Pomodoro timer app that helps you stay focused and productive by breaking your work into intervals, traditionally 25 minutes in length, separated by short breaks.",
+    "size": 40,
+    "reviews": 3200,
+    "ratingAvg": 4.6,
+    "downloads": 180000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1850 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921223.png",
+    "title": "Be Focused",
+    "companyName": "Be Focused LLC",
+    "id": 10,
+    "description": "Be Focused allows you to focus on your tasks by breaking them into intervals, separated by short breaks. It helps you stay productive and organized.",
+    "size": 35,
+    "reviews": 2800,
+    "ratingAvg": 4.5,
+    "downloads": 150000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 350 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1630 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921224.png",
+    "title": "Focus Timer",
+    "companyName": "Focus Timer Ltd.",
+    "id": 11,
+    "description": "Focus Timer is a simple and effective Pomodoro timer that helps you stay focused and productive by breaking your work into intervals, traditionally 25 minutes in length.",
+    "size": 38,
+    "reviews": 2500,
+    "ratingAvg": 4.4,
+    "downloads": 130000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1510 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921225.png",
+    "title": "Pomodone",
+    "companyName": "Pomodone Inc.",
+    "id": 12,
+    "description": "Pomodone is a task and time tracking app that integrates with your existing task management tools and helps you stay focused using the Pomodoro technique.",
+    "size": 45,
+    "reviews": 2300,
+    "ratingAvg": 4.3,
+    "downloads": 120000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 1480 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921226.png",
+    "title": "Focus@Will",
+    "companyName": "Focus@Will Labs",
+    "id": 13,
+    "description": "Focus@Will provides productivity music designed to help you focus and work more efficiently. It offers a variety of music channels tailored to different work styles.",
+    "size": 50,
+    "reviews": 2100,
+    "ratingAvg": 4.2,
+    "downloads": 110000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 1460 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921227.png",
+    "title": "Focus To-Do",
+    "companyName": "Focus To-Do Inc.",
+    "id": 14,
+    "description": "Focus To-Do combines the Pomodoro Technique with task management, helping you stay focused and organized by breaking your work into intervals and tracking your tasks.",
+    "size": 52,
+    "reviews": 1900,
+    "ratingAvg": 4.1,
+    "downloads": 100000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 360 },
+      { "name": "5 star", "count": 1300 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921228.png",
+    "title": "Focus Keeper",
+    "companyName": "Focus Keeper Ltd.",
+    "id": 15,
+    "description": "Focus Keeper helps you keep your productivity high by using the Pomodoro technique. Stay focused on any task you are working on and get things done.",
+    "size": 48,
+    "reviews": 1700,
+    "ratingAvg": 4.0,
+    "downloads": 90000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 1210 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921229.png",
+    "title": "Pomodoro Timer",
+    "companyName": "Pomodoro Timer Co.",
+    "id": 16,
+    "description": "Pomodoro Timer is a simple and effective app that helps you stay focused and productive by breaking your work into intervals, traditionally 25 minutes in length.",
+    "size": 40,
+    "reviews": 1500,
+    "ratingAvg": 3.9,
+    "downloads": 80000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 25 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 1090 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921230.png",
+    "title": "Focus Timer Pro",
+    "companyName": "Focus Timer Pro Inc.",
+    "id": 17,
+    "description": "Focus Timer Pro is a premium Pomodoro timer app that offers advanced features like customizable intervals, detailed statistics, and task management.",
+    "size": 55,
+    "reviews": 1300,
+    "ratingAvg": 3.8,
+    "downloads": 70000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 970 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921231.png",
+    "title": "Focus Timer Lite",
+    "companyName": "Focus Timer Lite Ltd.",
+    "id": 18,
+    "description": "Focus Timer Lite is a lightweight Pomodoro timer app that helps you stay focused and productive with minimal distractions.",
+    "size": 30,
+    "reviews": 1100,
+    "ratingAvg": 3.7,
+    "downloads": 60000,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 15 },
+      { "name": "3 star", "count": 80 },
+      { "name": "4 star", "count": 150 },
+      { "name": "5 star", "count": 850 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921232.png",
+    "title": "Focus Timer HD",
+    "companyName": "Focus Timer HD Inc.",
+    "id": 19,
+    "description": "Focus Timer HD is a high-definition Pomodoro timer app that offers a visually appealing interface and advanced features to enhance your focus.",
+    "size": 60,
+    "reviews": 900,
+    "ratingAvg": 3.6,
+    "downloads": 50000,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 100 },
+      { "name": "5 star", "count": 735 }
+    ]
+  }
+]

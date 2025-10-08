@@ -1,0 +1,146 @@
+[
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/616/616408.png",
+    "title": "Forest: Focus for Productivity",
+    "companyName": "SeekrTech",
+    "id": 1,
+    "description": "Stay focused and grow a virtual forest by completing your tasks. A fun way to beat phone addiction and boost productivity.",
+    "size": "183.5 MB",
+    "reviews": "745K",
+    "ratingAvg": 4.3,
+    "downloads": "10M+",
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 410 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 2710 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/847/847969.png",
+    "title": "SmPlan: ToDo List with Reminder",
+    "companyName": "SmSoft Solutions",
+    "id": 2,
+    "description": "Organize your daily tasks, set reminders, and never miss deadlines with a clean and intuitive to-do app.",
+    "size": "309.3 MB",
+    "reviews": "51.7K",
+    "ratingAvg": 4.2,
+    "downloads": "5M+",
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 310 },
+      { "name": "4 star", "count": 620 },
+      { "name": "5 star", "count": 1100 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/3062/3062634.png",
+    "title": "FLIP - Focus Timer for Study",
+    "companyName": "FLIP Tech",
+    "id": 3,
+    "description": "Enhance your study sessions using the FLIP timer. Focused intervals help you study efficiently and avoid distractions.",
+    "size": "250 MB",
+    "reviews": "17K",
+    "ratingAvg": 4.8,
+    "downloads": "4M+",
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 210 },
+      { "name": "4 star", "count": 520 },
+      { "name": "5 star", "count": 940 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2922/2922510.png",
+    "title": "Pomocat - Cute Pomodoro Timer",
+    "companyName": "CatFocus Inc",
+    "id": 4,
+    "description": "Use Pomodoro technique with adorable cat animations. Stay productive and enjoy your focus sessions.",
+    "size": "158 MB",
+    "reviews": "517K",
+    "ratingAvg": 4.9,
+    "downloads": "12M+",
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 310 },
+      { "name": "5 star", "count": 860 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2920/2920222.png",
+    "title": "Time Planner: Schedule & Tasks",
+    "companyName": "PlanIt Ltd",
+    "id": 5,
+    "description": "Plan your day efficiently, schedule tasks, and track your productivity with ease using this all-in-one planner.",
+    "size": "140 MB",
+    "reviews": "61.2K",
+    "ratingAvg": 4.1,
+    "downloads": "8M+",
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 720 },
+      { "name": "5 star", "count": 710 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921825.png",
+    "title": "Morning Habits - Daily Routine",
+    "companyName": "HabitFlow",
+    "id": 6,
+    "description": "Build healthy morning routines and track your daily habits for a productive and positive start to your day.",
+    "size": "39 MB",
+    "reviews": "2K",
+    "ratingAvg": 4.1,
+    "downloads": "2M+",
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 310 },
+      { "name": "5 star", "count": 590 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2921/2921827.png",
+    "title": "Focus Plant: Pomodoro Forest",
+    "companyName": "GreenFocus Apps",
+    "id": 7,
+    "description": "Grow a virtual forest while staying focused using Pomodoro timers. Fun, interactive, and effective for concentration.",
+    "size": "46 MB",
+    "reviews": "5K",
+    "ratingAvg": 4.7,
+    "downloads": "7M+",
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 35 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 810 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2922/2922512.png",
+    "title": "Alarmy - Alarm Clock & Sleep",
+    "companyName": "Alarmy Inc",
+    "id": 8,
+    "description": "Wake up on time with smart alarms, sleep tracking, and fun challenges to get out of bed effectively.",
+    "size": "8 MB",
+    "reviews": "91K",
+    "ratingAvg": 4.9,
+    "downloads": "15M+",
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 80 },
+      { "name": "4 star", "count": 20 },
+      { "name": "5 star", "count": 2750 }
+    ]
+  }
+]
