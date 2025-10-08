@@ -2,6 +2,7 @@ import React from 'react';
 import bannerImg from "../../assets/hero.png"
 import googlePlayIcon from "../../assets/google-play-icon.png"
 import appStoreIcon from "../../assets/app-store-icon.webp"
+import { Link } from 'react-router';
 
 
 const Banner = () => {
@@ -13,12 +14,16 @@ const Banner = () => {
                 <p className='text-[#627382] text-lg md:text-xl'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br />Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
 
                 <div className='flex flex-col md:flex-row items-center justify-center gap-4 mb-10'>
-                    <button className="outline outline-[#D2D2D2] text-[#001931] font-semibold text-xl rounded px-5 py-3 flex items-center justify-center gap-2 w-5/6 md:w-auto"><img className='w-6 h-6' src={googlePlayIcon} alt="" />
-                        <span>Google Play</span>
-                    </button>
-                    <button className="outline outline-[#D2D2D2] text-[#001931] font-semibold text-xl rounded px-5 py-3 flex items-center justify-center gap-2 w-5/6 md:w-auto"><img className='w-7 h-7' src={appStoreIcon} alt="" />
-                        <span>App Store</span>
-                    </button>
+                    <Link to="https://play.google.com/">
+                        <button className="outline outline-[#D2D2D2] text-[#001931] font-semibold text-xl rounded px-5 py-3 flex items-center justify-center gap-2 w-5/6 md:w-auto"><img className='w-6 h-6' src={googlePlayIcon} alt="" />
+                            <span>Google Play</span>
+                        </button>
+                    </Link>
+                    <Link to="https://www.apple.com/app-store/">
+                        <button className="outline outline-[#D2D2D2] text-[#001931] font-semibold text-xl rounded px-5 py-3 flex items-center justify-center gap-2 w-5/6 md:w-auto"><img className='w-7 h-7' src={appStoreIcon} alt="" />
+                            <span>App Store</span>
+                        </button>
+                    </Link>
                 </div>
             </div>
             <div className='text-center flex justify-center items-center'>

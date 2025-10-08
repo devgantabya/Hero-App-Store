@@ -1,11 +1,11 @@
 import React from 'react';
 
-const ListedBooks = () => {
+const AllApps = () => {
     return (
         <div className='flex justify-center items-center h-screen bg-blue-700 text-white text-4xl'>
-            <h1>This is listed books</h1>
+            <h1>This is All Apps Page</h1>
         </div>
     );
 };
 
-export default ListedBooks;
+export default AllApps;

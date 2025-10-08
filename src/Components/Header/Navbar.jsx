@@ -54,7 +54,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to="https://github.com/devgantabya" className='bg-gradient-to-br from-[#632EE3] to-[#9F62F2] py-2 px-4 text-white rounded text-base font-semibold flex items-center gap-2'>
+                    <Link to="https://github.com/devgantabya" className='bg-gradient-to-br from-[#632EE3] to-[#9F62F2] py-2 px-4 text-white rounded text-base font-semibold flex items-center gap-2 mr-4 md:mr-0'>
                         <span><FaGithub className='w-5 h-5' /></span>
                         <span>Contribute</span>
                     </Link>
