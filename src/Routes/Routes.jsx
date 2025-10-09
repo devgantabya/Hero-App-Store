@@ -6,6 +6,7 @@ import Home from '../Pages/Home/Home';
 import InstalledApps from '../Pages/InstalledApps/InstalledApps';
 import AllApps from '../Pages/AllApps/AllApps';
 import AppDetails from '../Pages/AppDetails/AppDetails';
+import NotFoundAppPage from '../Pages/NotFoundAppPage/NotFoundAppPage';
 
 export const router = createBrowserRouter([
   {
@@ -40,11 +41,20 @@ export const router = createBrowserRouter([
       },
       {
         path: "/appDetails/:id",
-        loader: async () => {
+        loader: async ({ params }) => {
           const res = await fetch("/allAppsData.json");
-          return res.json();
+          const data = await res.json();
+
+          const app = data.find(item => item.id === parseInt(params.id));
+
+          if (!app) {
+            throw new Response("App Not Found", { status: 404, statusText: "App Not Found", statusTextCustom: "appNotFound" });
+          }
+
+          return app;
         },
-        Component: AppDetails
+        Component: AppDetails,
+        errorElement: <NotFoundAppPage></NotFoundAppPage>
       }
     ]
   }

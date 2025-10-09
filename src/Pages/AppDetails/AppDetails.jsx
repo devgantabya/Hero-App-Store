@@ -1,18 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { useLoaderData, useParams } from 'react-router';
+import { useLoaderData } from 'react-router';
 import iconDownloads from "../../assets/icon-downloads.png"
 import iconRatings from "../../assets/icon-ratings.png"
 import iconReviews from "../../assets/icon-review.png"
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 
 const AppDetails = () => {
-    const { id } = useParams();
-    const singleAppId = parseInt(id);
-    const data = useLoaderData();
+    const singleApp = useLoaderData();
 
-    const singleApp = data.find((app) => app.id === singleAppId)
 
-    const { image, companyName, description, ratingAvg, ratings, title, size, downloads, reviews } = singleApp;
+    const { id, image, companyName, description, ratingAvg, ratings, title, size, downloads, reviews } = singleApp;
 
     const [installedApps, setInstalledApps] = useState([]);
 
@@ -21,8 +18,8 @@ const AppDetails = () => {
         setInstalledApps(storedApps);
     }, []);
 
-    const handleMarkAsInstalled = (appId) => {
-        const numericId = Number(appId);
+    const handleMarkAsInstalled = (id) => {
+        const numericId = Number(id);
         if (!installedApps.includes(numericId)) {
             const updatedApps = [...installedApps, numericId];
             setInstalledApps(updatedApps);
@@ -30,7 +27,7 @@ const AppDetails = () => {
         }
     };
 
-    const isInstalled = installedApps.includes(singleAppId);
+    const isInstalled = installedApps.includes(id);
 
 
     return (
@@ -43,27 +40,31 @@ const AppDetails = () => {
                     <h2 className='text-[#001931] font-bold text-[32px] text-center md:text-left'>{title}</h2>
                     <p className='text-[#627382] text-xl pb-5 pt-2 text-center md:text-left'>Developed by <span className='text-transparent bg-clip-text bg-gradient-to-br from-[#632EE3] to-[#9F62F2]'>{companyName}</span></p>
                     <div>
-                        <div className='flex flex-col md:flex-row justify-center items-center md:justify-between gap-7 py-5 border-0 border-t-1 border-[#dddddd] md:w-3/5'>
-                            <div className='w-full flex flex-col md:justify-start  justify-center md:items-start items-center'>
-                                <img className='h-15 md:h-10 w-15 md:w-10' src={iconDownloads} alt="Download icon" />
-                                <p className='text-[#001931] pt-3 text-2xl md:text-base'>Downloads</p>
-                                <h3 className='text-[#001931] font-extrabold text-[40px]'>{downloads}</h3>
+                        <div className='flex  justify-center items-center md:justify-between gap-7 py-5 border-0 border-t-1 border-[#dddddd] md:w-3/5'>
+                            <div className='w-full flex flex-col md:justify-start  justify-center md:items-start items-center gap-3 md:gap-0'>
+                                <img className='h-10 w-10' src={iconDownloads} alt="Download icon" />
+                                <p className='text-[#001931] pt-3 text-base hidden md:block'>Downloads</p>
+                                <h3 className='text-[#001931] font-extrabold text-4xl md:text-[40px]'>{downloads}</h3>
                             </div>
-                            <div className='w-full flex flex-col md:justify-start  justify-center md:items-start items-center'>
-                                <img className='h-15 md:h-10 w-15 md:w-10' src={iconRatings} alt="Rating icon" />
-                                <p className='text-[#001931] pt-3 text-2xl md:text-base'>Average Ratings</p>
-                                <h3 className='text-[#001931] font-extrabold text-[40px]'>{ratingAvg}</h3>
+                            <div className='w-full flex flex-col md:justify-start  justify-center md:items-start items-center gap-3 md:gap-0'>
+                                <img className='h-10 w-10' src={iconRatings} alt="Rating icon" />
+                                <p className='text-[#001931] pt-3 text-base hidden md:block'>Average Ratings</p>
+                                <h3 className='text-[#001931] font-extrabold text-4xl md:text-[40px]'>{ratingAvg}</h3>
                             </div>
-                            <div className='w-full flex flex-col md:justify-start  justify-center md:items-start items-center'>
-                                <img className='h-15 md:h-10 w-15 md:w-10' src={iconReviews} alt="Review icon" />
-                                <p className='text-[#001931] pt-3 text-2xl md:text-base'>Total Reviews</p>
-                                <h3 className='text-[#001931] font-extrabold text-[40px]'>{reviews}</h3>
+                            <div className='w-full flex flex-col md:justify-start  justify-center md:items-start items-center gap-3 md:gap-0'>
+                                <img className='h-10 w-10' src={iconReviews} alt="Review icon" />
+                                <p className='text-[#001931] pt-3 text-base hidden md:block'>Total Reviews</p>
+                                <h3 className='text-[#001931] font-extrabold text-4xl md:text-[40px]'>{reviews}</h3>
                             </div>
                         </div>
                         <div className='text-center md:text-left'>
-                            <button onClick={() => handleMarkAsInstalled(id)}
-                                className={'bg-[#00D390] text-white rounded px-5 py-3 text-xl font-semibold ${isInstalled ? "opacity-50 cursor-not-allowed" : ""}'}>
-                                {isInstalled ? "Installed" : `Install Now ( ${size} )`}</button>
+                            <button
+                                onClick={() => handleMarkAsInstalled(id)}
+                                disabled={isInstalled}
+                                className={`bg-[#00D390] text-white rounded px-5 py-3 mt-5 md:mt-0 text-xl font-semibold ${isInstalled ? "opacity-50 cursor-not-allowed" : ""}`}
+                            >
+                                {isInstalled ? "Installed" : `Install Now ( ${size} )`}
+                            </button>
                         </div>
                     </div>
                 </div>
