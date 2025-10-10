@@ -123,7 +123,9 @@ const InstalledApps = () => {
               <div className="flex items-center gap-3 ">
                 <img className="w-20 h-20" src={app.image} alt="" />
                 <div className="space-y-3">
-                  <h2 className="text-xl font-semibold">{app.title}</h2>
+                  <h2 className="text-xl font-semibold dark:text-black">
+                    {app.title}
+                  </h2>
                   <div className="flex items-center gap-4">
                     <div className="text-[#00D390] text-base font-medium flex items-center gap-1">
                       <FiDownload />

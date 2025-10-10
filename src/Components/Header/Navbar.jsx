@@ -58,12 +58,12 @@ const Navbar = () => {
       <div className="flex justify-between items-center py-6 container mx-auto relative z-50">
         <div className="navbar-start">
           <button
-            className="btn btn-ghost lg:hidden"
+            className="btn  lg:hidden bg-white border-0 shadow-none hover:bg-white hover:border-0 hover:shadow-none"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-5 w-5 text-black hover:bg-white hover:border-0 hover:shadow-none"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -104,7 +104,7 @@ const Navbar = () => {
         </div>
       </div>
       {menuOpen && (
-        <ul className="menu menu-sm bg-base-100 rounded-box p-2 shadow absolute top-full left-0 z-40">
+        <ul className="menu menu-sm bg-white rounded-box p-2 shadow absolute top-full left-0 z-40">
           {links}
         </ul>
       )}

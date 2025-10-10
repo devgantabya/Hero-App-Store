@@ -43,7 +43,7 @@ const AllApps = () => {
             placeholder="Search apps"
             value={searchInputValue}
             onChange={(e) => setSearchInputValue(e.target.value)}
-            className="border border-gray-300 rounded-lg pl-10 pr-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="border border-gray-300 rounded-lg pl-10 pr-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
           />
         </div>
       </div>
