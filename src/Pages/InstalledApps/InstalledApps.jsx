@@ -48,22 +48,26 @@ const InstalledApps = () => {
       installedApps.includes(app.id)
     );
 
-    const parseSize = (size) => parseFloat(size);
+    const parseDownloads = (str) => {
+      if (!str) return 0;
+      const value = parseFloat(str.replace(/[^\d.]/g, ""));
+      if (str.includes("M")) return value * 1_000_000;
+      if (str.includes("K")) return value * 1_000;
+      return value;
+    };
 
     let sortedData = [];
 
     if (type === "High-Low") {
       sortedData = [...installedAppsData].sort(
-        (a, b) => parseSize(b.size) - parseSize(a.size)
+        (a, b) => parseDownloads(b.downloads) - parseDownloads(a.downloads)
       );
-      console.log("Clicked High-Low");
     }
 
     if (type === "Low-High") {
       sortedData = [...installedAppsData].sort(
-        (a, b) => parseSize(a.size) - parseSize(b.size)
+        (a, b) => parseDownloads(a.downloads) - parseDownloads(b.downloads)
       );
-      console.log("Clicked Low-High");
     }
 
     setInstalledApps(sortedData.map((app) => app.id));
@@ -90,10 +94,10 @@ const InstalledApps = () => {
         <details className="dropdown" ref={dropdownRef}>
           <summary className="btn m-1">
             {sort
-              ? `Sort by size: ${
+              ? `Sort by downloads: ${
                   sort === "High-Low" ? "High to Low" : "Low to High"
                 }`
-              : "Sort by size"}
+              : "Sort by downloads"}
             <FaCaretDown />
           </summary>
           <ul className="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
