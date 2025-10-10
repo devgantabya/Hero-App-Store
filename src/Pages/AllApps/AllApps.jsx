@@ -1,4 +1,4 @@
-import React, { Suspense, useState, useMemo } from "react";
+import React, { useState, useEffect } from "react";
 import { useLoaderData } from "react-router";
 import InsideAllApps from "../InsideAllApps/InsideAllApps";
 import { CiSearch } from "react-icons/ci";
@@ -7,16 +7,20 @@ import Loader from "../../Components/Loader/Loader";
 const AllApps = () => {
   const allAppData = useLoaderData();
   const [searchInputValue, setSearchInputValue] = useState("");
+  const [filteredApps, setFilteredApps] = useState(allAppData);
   const [loading, setLoading] = useState(false);
 
-  const filteredApps = useMemo(() => {
+  useEffect(() => {
     setLoading(true);
-    const result = allAppData.filter((app) =>
-      app.title.toLowerCase().includes(searchInputValue.toLowerCase())
-    );
-    setTimeout(() => setLoading(false), 300);
-    return result;
-  }, [allAppData, searchInputValue]);
+    const timer = setTimeout(() => {
+      const result = allAppData.filter((app) =>
+        app.title.toLowerCase().includes(searchInputValue.toLowerCase())
+      );
+      setFilteredApps(result);
+      setLoading(false);
+    }, 400);
+    return () => clearTimeout(timer);
+  }, [searchInputValue, allAppData]);
 
   return (
     <div className="container mx-auto pb-15 px-4 md:px-0">
@@ -44,34 +48,21 @@ const AllApps = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center">
-        {/* {loading && <span className="loading loading-spinner loading-xl"></span>} */}
-        {loading && <Loader></Loader>}
-      </div>
-
-      <div>
-        <Suspense
-          fallback={
-            <span className="loading loading-spinner loading-xl"></span>
-          }
-          hydrateFallback={<span>Loading initial data...</span>}
-        >
-          {filteredApps.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
-              {filteredApps.map((insideApps, index) => (
-                <InsideAllApps
-                  insideApps={insideApps}
-                  key={index}
-                ></InsideAllApps>
-              ))}
-            </div>
-          ) : (
-            <div className="text-center text-gray-500 text-2xl mt-10">
-              No App Found
-            </div>
-          )}
-        </Suspense>
-      </div>
+      {loading ? (
+        <div className="flex justify-center items-center">
+          <Loader></Loader>
+        </div>
+      ) : filteredApps.length > 0 ? (
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
+          {filteredApps.map((insideApps, index) => (
+            <InsideAllApps insideApps={insideApps} key={index}></InsideAllApps>
+          ))}
+        </div>
+      ) : (
+        <div className="text-center text-gray-500 text-2xl mt-10">
+          No App Found
+        </div>
+      )}
     </div>
   );
 };
